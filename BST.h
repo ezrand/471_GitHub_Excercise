@@ -127,7 +127,7 @@ template <typename Key, typename E>
 BSTNode<Key, E>* BST<Key, E>::
 getmin(BSTNode<Key, E>* rt) {
   if (rt->left() == NULL)
-    return rt;
+   return rt;
   else return getmin(rt->left());
 }
 template <typename Key, typename E>
@@ -196,4 +196,10 @@ printhelp(BSTNode<Key, E>* root, int level) const {
   printhelp(root->left(), level+1);   // Do left subtree
   visit(root);						  // Print node value
   printhelp(root->right(), level+1);  // Do right subtree
+}
+
+template <typename Key, typename E>
+void BST<Key, E>::
+printPreOrder(BSTNode<Key, E>* root, int level) const {
+  typedef printprintIPirnafl; 
 }
